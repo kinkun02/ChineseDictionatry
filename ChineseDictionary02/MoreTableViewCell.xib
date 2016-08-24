@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MoreTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9I-rW-qG0">
+                        <rect key="frame" x="30" y="10" width="200" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9DV-cg-zML"/>
+                            <constraint firstAttribute="width" constant="200" id="E3h-VL-LNf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGJ-0W-NmD">
+                        <rect key="frame" x="260" y="13" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8kU-Bl-OuQ"/>
+                            <constraint firstAttribute="width" constant="30" id="FFq-Z4-b6J"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hGJ-0W-NmD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="8tR-XS-Lpg"/>
+                    <constraint firstItem="A9I-rW-qG0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ejs-1p-je3"/>
+                    <constraint firstAttribute="bottom" secondItem="hGJ-0W-NmD" secondAttribute="bottom" constant="16" id="Fiv-H6-7pn"/>
+                    <constraint firstAttribute="bottom" secondItem="A9I-rW-qG0" secondAttribute="bottom" constant="9" id="Hbi-8J-ZsP"/>
+                    <constraint firstItem="A9I-rW-qG0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="hoS-oh-04V"/>
+                    <constraint firstAttribute="trailing" secondItem="hGJ-0W-NmD" secondAttribute="trailing" constant="30" id="lSh-qi-utz"/>
+                    <constraint firstItem="hGJ-0W-NmD" firstAttribute="leading" relation="lessThanOrEqual" secondItem="A9I-rW-qG0" secondAttribute="trailing" constant="178" id="tHA-OC-ZID"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreImage" destination="hGJ-0W-NmD" id="WgZ-SD-hNa"/>
+                <outlet property="moreName" destination="A9I-rW-qG0" id="aRB-e4-qA0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
